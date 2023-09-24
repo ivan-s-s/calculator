@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100dvh;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    background-color: #fccedd;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: -21px 22px 24px -3px rgba(34, 60, 80, 0.2);
+}
+
+.calculator_tablo {
+    text-align: right;
+    background-color: #f8fae3;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 36px;
+}
+
+.tablo_expression {
+    font-size: 24px;
+    color: #8b8b8b;
+}
+
+.tablo_current {
+    font-size: 32px;
+}
+
+.calculator_buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "gb0 gb1 gb2 gb3 gb4 gb5"
+        "gb6 gb7 gb8 gb9 gb10 gb11"
+        "gb12 gb13 gb14 gb15 gb16 gb17"
+        "gb18 gb19 gb20 gb21 gb22 gb23"
+        "gb24 gb25 gb26 gb27 gb22 gb23";
+}
+
+.btn {
+    aspect-ratio: 1 / 1;
+    margin: 2px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #f7e8e8;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn7,
+#btn8,
+#btn9,
+#btn13,
+#btn14,
+#btn15,
+#btn19,
+#btn20,
+#btn21,
+#btn25,
+#btn26,
+#btn27 {
+    background-color: #de9eae;
+}
+
+#btn18,
+#btn24 {
+    background-color: #e06d5e;
+}
+
+#btn22,
+#btn23 {
+    aspect-ratio: 1/2;
+}
+
+#btn23 {
+    background-color: #e3e0ff;
+}
+
+
+.btn:hover {
+    box-shadow: 0px 0px 50px 0px rgba(92, 33, 33, 0.2) inset;
+}
+
+.btn:active {
+    box-shadow: 0px 0px 50px 0px rgba(253, 253, 253, 0.2) inset;
+    border: 2px solid #58fa30;
+    ;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+}
