@@ -47,17 +47,21 @@ main {
 }
 
 .calculator_tablo {
-    text-align: right;
     background-color: #f8fae3;
     padding: 10px;
     border: 2px solid #000000;
     border-radius: 10px;
     margin-bottom: 20px;
     line-height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    height: 96px;
 }
 
 .tablo_expression {
-    font-size: 24px;
+    font-size: 20px;
     color: #8b8b8b;
 }
 
