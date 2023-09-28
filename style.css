@@ -88,13 +88,13 @@ main {
     aspect-ratio: 1 / 1;
     margin: 2px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 900;
     color: #000000;
     background-color: #f7e8e8;
-    border-top: 2px solid #616161;
+    border-top: 2px solid #474747;
     border-right: 2px solid #000000;
     border-bottom: 2px solid #000000;
-    border-left: 2px solid #616161;
+    border-left: 2px solid #474747;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -153,4 +153,22 @@ footer {
 
 .disabled {
     opacity: 0.7;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+}
+
+footer>a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
 }
