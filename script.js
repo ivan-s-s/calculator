@@ -4,6 +4,8 @@ const DEFAULT_EXPRESSION = '';
 let currentValue = DEFAULT_VALUE;
 let currentExpression = DEFAULT_EXPRESSION;
 
+window.addEventListener('keydown', keybouardEvent);
+
 const currentTablo = document.querySelector('.tablo_current');
 currentTablo.textContent = `${currentValue}`;
 
@@ -413,4 +415,14 @@ function memoryActivate(newValue) {
         removeAttr();
         removeClassDesabled();
     }
+}
+
+function keybouardEvent(e) {
+    if (e.key >= 0 && e.key <= 9) setValue(e.key);
+    if (e.key === '.') setValue(e.key);
+    if (e.key === '=' || e.key === 'Enter') getResult();
+    if (e.key === 'Backspace') backspaceFunk();
+    if (e.key === 'Escape') clearAllExpressions('C');
+    if (e.key === '+' || e.key === '-' || e.key === '*' || e.key === '/')
+        setExpression(e.key);
 }
